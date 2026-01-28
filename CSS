@@ -1,0 +1,46 @@
+/* sidebar uchun */
+.s_menu + ul {
+    display: none;
+}
+.s_menu:checked + ul {
+    display: block;
+}
+.s_menu {
+    display: none;
+}
+aside > ul > li {
+    line-height: 40px;
+}
+aside > ul > li > label {
+    padding-left: 10px;
+}
+aside > ul > li:hover  {
+    background-color: rgb(32, 1, 116);
+    color: white;
+    cursor: pointer;
+}
+aside > ul > li:has(.s_menu:checked){
+   background-color: rgb(14, 0, 53);
+   color: white; 
+}
+aside > ul > li > ul > li {
+    line-height: 30px;
+    background-color: rgb(210, 140, 243);
+    font-size: small;
+    font-weight: 700;
+    padding-left: 10px;
+    letter-spacing: -0.5px; 
+} 
+aside > ul > li > ul > li:hover {
+    background-color: rgb(80, 2, 110);
+} 
+aside > ul > li > ul > li > a:hover {
+    color: white;
+} 
+
+aside > ul > li:has(.s_menu:checked) .uchburchak {
+    fill: white;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;  
+    transition: 2s;
+}
