@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sewing Course</title>
+
+  <link href="bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">Sewing Course</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="News.html">Patterns</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Lessons</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Video_tutorials.html">Video Tutorials</a></li>
+            <li><a class="dropdown-item" href="Perfect_tutorials.html">Perfect Textbook</a></li>
+            <li><a class="dropdown-item" href="Prices.html">Prices</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+
+      </ul>
+
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Language</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="../Tikuvchilik_sayti/index.html">Uz</a></li>
+          <li><a class="dropdown-item" href="#">En</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<div id="patternCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner rounded-4">
+
+    <div class="carousel-item active">
+      <img src="../Bootstrap/rasmlar/naqsh1.jpg" class="d-block w-100" style="height:400px; object-fit:cover;">
+      <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded-3">
+        <h3 class="fw-bold">Patterns Section</h3>
+        <p>Top sewing patterns and video lessons.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="rasmlar/naqsh2.jpg" class="d-block w-100" style="height:400px; object-fit:cover;">
+      <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded-3">
+        <h3 class="fw-bold">Ocean-Themed Pillows</h3>
+        <p>Create beautiful decorative pillow patterns.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="rasmlar/naqsh3.jpg" class="d-block w-100" style="height:400px; object-fit:cover;">
+      <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded-3">
+        <h3 class="fw-bold">Star Blanket</h3>
+        <p>Simple and beautiful star-pattern blankets.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#patternCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#patternCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+
+
+<div class="container mt-5">
+  <div class="row g-4">
+
+    
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="rasmlar/naqsh1.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Scarves</h5>
+          <p class="text-muted mb-1">YouTube lesson • Sewing +7</p>
+
+          <p class="mb-2"><i class="fa-solid fa-star text-warning"></i> 4.9 (241 ratings)</p>
+
+          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#video1">
+            Watch Video
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="rasmlar/naqsh2.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Pillow Patterns</h5>
+          <p class="text-muted mb-1">YouTube lesson • Sewing +5</p>
+
+          <p class="mb-2"><i class="fa-solid fa-star text-warning"></i> 5.0 (112 ratings)</p>
+
+          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#video2">
+            Watch Video
+          </button>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="rasmlar/naqsh3.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Star Blanket</h5>
+          <p class="text-muted mb-1">YouTube lesson • Craft +3</p>
+
+          <p class="mb-2"><i class="fa-solid fa-star text-warning"></i> 4.8 (89 ratings)</p>
+
+          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#video3">
+            Watch Video
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="video1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Scarf Pattern</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <iframe width="100%" height="500"
+                src="https://www.youtube.com/embed/ZeEXH1SzjgG"
+                allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="video2">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Pillow Sewing</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <iframe width="100%" height="500"
+                src="https://www.youtube.com/embed/XBD726raGtU"
+                allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="video3">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Star Blanket</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <iframe width="100%" height="500"
+                src="https://www.youtube.com/embed/wK1Ol8Fyq50"
+                allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="bg-dark text-white text-center p-4 mt-5">
+
+  <p class="mb-1">2025 Sewing Course. All rights reserved.</p>
+
+  <p class="mb-2">
+    <i class="fa-solid fa-location-dot"></i> Republic of Karakalpakstan, Kara-Uzak district <br>
+    <i class="fa-solid fa-phone"></i> +998 94 787 24 27 <br>
+    <a href="mailto:saykontikuvkursi@example.com" class="text-white">
+      saykontikuvkursi@example.com
+    </a>
+  </p>
+
+  <p class="mb-0">
+    <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="#" class="text-white mx-2"><i class="fa-brands fa-telegram"></i> Telegram</a>
+    <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    <a href="#" class="text-white mx-2"><i class="fa-brands fa-youtube"></i> YouTube</a>
+  </p>
+
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
